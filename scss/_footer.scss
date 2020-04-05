@@ -1,0 +1,27 @@
+.c-footer{
+  background-color: $Dark-Blue-footer;
+  padding-top: 10rem;
+  &__content{
+    position: relative;
+    display: grid;
+    gap: 2rem;
+    @media ($tablet){
+      grid-template-columns: repeat(2,1fr);
+    }
+    @media ($desktop){
+      grid-template-columns: 6fr 1fr 1fr 1fr;
+      gap: 0;
+    }
+  }
+  &__info{
+    @media ($tablet){
+      grid-column: 1/3;
+    }
+    @media ($desktop){
+      grid-column: auto;
+    }
+  }
+  @media ($tablet){
+    padding-top: 15rem;
+  }
+}

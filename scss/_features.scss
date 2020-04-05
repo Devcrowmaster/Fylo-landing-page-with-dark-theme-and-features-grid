@@ -1,0 +1,29 @@
+.c-features{
+  display: grid;
+  gap: 6rem;
+  margin-top: 10rem;
+  position: relative;
+  @media ($tablet){
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+.c-feature{
+  text-align: center;
+  &__icon{
+    margin-bottom: 2.5rem;
+    img{
+      margin: 0 auto;
+      height: 4rem;
+    }
+  }
+  &__title{
+    font-family: $Raleway;
+  }
+  &__description{
+    line-height: 1.5;
+    @media ($desktop){
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
+}

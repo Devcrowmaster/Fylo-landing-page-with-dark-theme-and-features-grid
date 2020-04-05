@@ -1,0 +1,14 @@
+.c-intro{
+  text-align: center;
+  position: relative;
+  &__description{
+    line-height: 1.5;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    @media ($tablet){
+      width: 60%;
+      margin-top: 1rem;
+    }
+  }
+}

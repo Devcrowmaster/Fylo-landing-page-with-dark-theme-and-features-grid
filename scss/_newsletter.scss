@@ -1,0 +1,57 @@
+.c-newsletter{
+  background-color: $Dark-Blue-intro;
+  margin-top: 10rem;
+  padding: 2rem 1.5rem;
+  border-radius: .5rem;
+  margin-bottom: -7rem;
+  position: relative;
+  text-align: center;
+  box-shadow: 4px 3px 10px 3px rgba(#000,.3);
+  &__title{
+    font-size: 1rem;
+  }
+  &__text{
+    font-size: .85rem;
+    line-height: 1.5;
+  }
+  &__group{
+    display: grid;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+  }
+  &__email{
+    border: none;
+    &::placeholder{
+      color: #999595;
+      font-size: .65rem;
+    }
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+  @media ($tablet){
+    max-width: 30rem;
+    margin: 10rem auto -7rem auto;
+    &__title{
+      font-size: 1.5rem;
+    }
+  }
+  @media ($desktop){
+    max-width: 45rem;
+    padding: 2rem 4rem;
+    &__title{
+      font-size: 1.5rem;
+    }
+    &__text{
+      margin: 0 auto;
+    }
+    &__group{
+      grid-template-columns: 70% 30%;
+      align-items: center;
+    }
+    &__email{
+      padding: .7rem 2rem;
+      font-size: .7rem;
+    }
+  }
+}

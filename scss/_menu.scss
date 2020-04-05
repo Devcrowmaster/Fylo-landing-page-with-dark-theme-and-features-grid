@@ -1,0 +1,121 @@
+.navbar{
+  &--social{
+    @media ($tablet){
+      grid-column: 1/3;
+    }
+    @media ($desktop){
+      grid-column: auto;
+    }
+  }
+}
+.c-menu{
+  $p: &;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  &__link{
+    color: white;
+    text-decoration: none;
+    font-family: $Raleway;
+  }
+  &--main,&--social{
+    display: flex;
+  }
+  &--main{
+    #{$p}__item{
+      &:not(:last-child){
+        margin-right: 1.5rem;
+        @media ($tablet){
+          margin-right: 3rem;
+        }
+      }
+    }
+    #{$p}__link{
+      @media ($tablet){
+        font-size: 1.1rem;
+      }
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  &--footer{
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+    #{$p}__item{
+      display: flex;
+      align-items: baseline;
+      line-height: 1.5;
+      font-size: 1rem;
+      img{
+        height: .9rem;
+        margin-right: 1.5rem;
+      }
+      &:not(:first-child){
+        align-items: center;
+        @media ($desktop){
+          align-items: flex-start;
+        }
+      }
+    }
+    &__text{
+      margin: 0;
+      line-height: 1.5;
+      font-size: .9rem;
+    }
+    @media ($tablet){
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      column-gap: 2rem;
+      #{$p}__item{
+        &:first-child{
+          grid-row: 1/3;
+        }
+        &:last-child{
+          grid-column: 2/2;
+        }
+      }
+    }
+    @media ($desktop){
+      column-gap: 4rem;
+      row-gap: 0;
+    }
+  }
+  &--social{
+    justify-content: center;
+    #{$p}__item{
+      &:not(:last-child){
+        margin-right: 1rem;
+      }
+    }
+    #{$p}__link{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid white;
+      border-radius: 100%;
+      width: 2rem;
+      height: 2rem;
+      text-decoration: none;
+      color: white;
+      transition: all .3s;
+      &:hover{
+        border: transparent;
+        background-color: $Cyan;
+        color: $Dark-Blue-main;
+      }
+    }
+  }
+  &--list{
+    #{$p}__link{
+      line-height: 2.5;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  
+}

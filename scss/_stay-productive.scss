@@ -1,0 +1,31 @@
+.stay-productive{
+  display: grid;
+  margin-top: 8rem;
+  justify-items: center;
+  gap: 3rem;
+  @media ($desktop){
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+  }
+  &__text{
+    line-height: 1.5;
+    font-size: .85rem;
+    @media ($tablet){
+      font-size: 1rem;
+    }
+  }
+}
+.cta-link{
+  display: inline-flex;
+  margin-top: .5rem;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid $Cyan;
+  &__work{
+    display: inline-flex;
+    text-decoration: none;
+    color: $Cyan;
+    img{
+      margin-left: .5rem;
+    }
+  }
+}

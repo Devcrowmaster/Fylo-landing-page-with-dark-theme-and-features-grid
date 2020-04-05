@@ -1,0 +1,29 @@
+.heading{
+  &--primary,&--secondary{
+    font-family: $Raleway;
+  }
+  &--primary{
+    font-size: 1.5rem;
+    margin-top: -5rem;
+    line-height: 1.5;
+    @media ($tablet){
+      font-size: 2rem;
+      width: 60%;
+      margin: 0 auto;
+      margin-top: -12rem;
+    }
+    @media ($desktop){
+      margin-top: -25rem;
+    }
+  }
+  &--secondary{
+    font-size: 1.1rem;
+    @media ($tablet){
+      font-size: 2rem;
+    }
+    @media ($desktop){
+      font-size: 2.5rem;
+      width: 80%;
+    }
+  }
+}

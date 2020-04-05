@@ -1,0 +1,21 @@
+.c-btn{
+  background-image: linear-gradient(90deg,rgba($Cyan,.9),rgba($Blue,.8));
+  display: inline-block;
+  color: white;
+  font-family: $Raleway;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 3rem;
+  font-size: .8rem;
+  &--large{
+    padding: 1rem 5rem;
+  }
+  &--medium{
+    padding: 1rem 3rem;
+    display: block;
+    @media ($desktop){
+      padding: .7rem .2rem;
+      display: inline-block;
+    }
+  }
+}
