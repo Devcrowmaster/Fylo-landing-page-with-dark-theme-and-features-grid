@@ -2,4 +2,3 @@
 node_modules/
 gulpfile.babel.js
 *.json
-webfonts/
