@@ -15,6 +15,15 @@ img{
   display: block;
   height: auto;
 }
+.attribution{
+  font-size: 11px;
+  text-align: center;
+  margin: 0;
+  padding: 1.5rem 0;
+  a{
+    color: hsl(228, 45%, 44%);
+  }
+}
 .o-container{
   max-width: 1100px;
   margin: 0 auto;

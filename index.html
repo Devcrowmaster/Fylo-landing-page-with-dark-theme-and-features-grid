@@ -1,238 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; margin: 0; padding: 1.5rem 0;}
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <div class="header">
-    <div class="o-container">
-      <header>
-        <a href="#">
-          <img src="images/logo.svg" alt="logo" class="brand">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="o-container">
+        <header><a href="#"><img class="brand" src="images/logo.svg" alt="logo"/></a>
           <nav>
             <ul class="c-menu c-menu--main">
-              <li class="c-menu__item"><a href="#" class="c-menu__link">Features</a></li>
-              <li class="c-menu__item"><a href="#" class="c-menu__link">Team</a></li>
-              <li class="c-menu__item"><a href="#" class="c-menu__link">Sign In</a></li>
+              <li class="c-menu__item"><a class="c-menu__link" href="#">Features</a></li>
+              <li class="c-menu__item"><a class="c-menu__link" href="#">Team</a></li>
+              <li class="c-menu__item"><a class="c-menu__link" href="#">Sign In</a></li>
             </ul>
           </nav>
-        </a>
-      </header>
-      <div class="hero">
-        <img src="images/illustration-intro.png" alt="intro">
+        </header>
+        <div class="hero"><img src="images/illustration-intro.png" alt="intro"/></div>
       </div>
     </div>
-  </div>
-
-  <div class="c-intro">
+    <!--Intro-->
+    <div class="c-intro">
+      <div class="o-container">
+        <h1 class="heading--primary">All your files in one secure location, accessible anywhere.</h1>
+        <p class="c-intro__description">Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p><a class="c-btn c-btn--large" href="#">Get Started</a>
+      </div>
+    </div>
+    <!--Features-->
     <div class="o-container">
-      <h1 class="heading--primary">All your files in one secure location, accessible anywhere.</h1>
-      <p class="c-intro__description">
-        Fylo stores all your most important files in one secure location. Access them wherever 
-        you need, share and collaborate with friends family, and co-workers.
-      </p>
-      <a href="#" class="c-btn c-btn--large">Get Started</a>
-    </div>
-  </div>
-
-  <div class="o-container">
-    <div class="c-features">
-      <div class="c-feature">
-        <div class="c-feature__icon">
-          <img src="images/icon-access-anywhere.svg" alt="access anywhere">
+      <div class="c-features">
+        <div class="c-feature">
+          <div class="c-feature__icon"><img src="images/icon-access-anywhere.svg" alt="access anywhere"/></div>
+          <h2 class="c-feature__title">Access your files, anywhere</h2>
+          <p class="c-feature__description">The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
         </div>
-        <h2 class="c-feature__title">Access your files, anywhere</h2>
-        <p class="c-feature__description">
-          The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.
-        </p>
-      </div>
-      
-      <div class="c-feature">
-        <div class="c-feature__icon">
-          <img src="images/icon-security.svg" alt="security">
+        <div class="c-feature">
+          <div class="c-feature__icon"><img src="images/icon-security.svg" alt="security"/></div>
+          <h2 class="c-feature__title">Security you can trust</h2>
+          <p class="c-feature__description">2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
         </div>
-        <h2 class="c-feature__title">Security you can trust</h2>
-        <p class="c-feature__description">
-          2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.
-        </p>
-      </div>
-      
-      <div class="c-feature">
-        <div class="c-feature__icon">
-          <img src="images/icon-collaboration.svg" alt="collaboration">
+        <div class="c-feature">
+          <div class="c-feature__icon"><img src="images/icon-collaboration.svg" alt="collaboration"/></div>
+          <h2 class="c-feature__title">Real-time collaboration</h2>
+          <p class="c-feature__description">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
         </div>
-        <h2 class="c-feature__title">Real-time collaboration</h2>
-        <p class="c-feature__description">
-          Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.
-        </p>
-      </div>
-  
-      <div class="c-feature">
-        <div class="c-feature__icon">
-          <img src="images/icon-any-file.svg" alt="any file">
-        </div>
-        <h2 class="c-feature__title">Store any type of file</h2>
-        <p class="c-feature__description">
-          Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.
-        </p>
-      </div>
-  
-    </div>
-  </div>
-
-  <div class="o-container">
-    <div class="stay-productive">
-      <img src="images/illustration-stay-productive.png" alt="stay productive">
-      <div class="stay-productive__content">
-        <h2 class="heading--secondary">Stay productive, wherever you are</h2>
-        <p class="stay-productive__text"> 
-          Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
-          storage needs.
-        </p>
-        <p class="stay-productive__text">
-          Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.
-        </p>
-        <div class="cta-link">
-          <a href="#" class="cta-link__work">See how Fylo works
-          <img src="images/icon-arrow.svg" alt="arrow">
-          </a>
+        <div class="c-feature">
+          <div class="c-feature__icon"><img src="images/icon-any-file.svg" alt="any file"/></div>
+          <h2 class="c-feature__title">Store any type of file</h2>
+          <p class="c-feature__description">Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="o-container">
-    <div class="c-testimonials">
-      <figure class="c-testimonial">
-        <blockquote class="c-testimonial__text">
-          Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
-        </blockquote>
-        <footer class="c-testimonial__info">
-          <div class="c-testimonial__img">
-            <img src="images/profile-1.jpg" alt="profile 1">
-          </div>
-          <div class="c-testimonial__data">
-            <cite class="c-testimonial__author">Satish Patel</cite>
-            <cite class="c-testimonial__company">Founder & CEO, Huddle</cite>
-          </div>
-        </footer>
-      </figure>
-      
-      <figure class="c-testimonial">
-        <blockquote class="c-testimonial__text">
-          Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
-        </blockquote>
-        <footer class="c-testimonial__info">
-          <div class="c-testimonial__img">
-            <img src="images/profile-2.jpg" alt="profile 2">
-          </div>
-          <div class="c-testimonial__data">
-            <cite class="c-testimonial__author">Bruce McKenzie</cite>
-            <cite class="c-testimonial__company">Founder & CEO, Huddle</cite>
-          </div>
-        </footer>
-      </figure>
-  
-      <figure class="c-testimonial">
-        <blockquote class="c-testimonial__text">
-          Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
-        </blockquote>
-        <footer class="c-testimonial__info">
-          <div class="c-testimonial__img">
-            <img src="images/profile-3.jpg" alt="profile 3">
-          </div>
-          <div class="c-testimonial__data">
-            <cite class="c-testimonial__author">Iva Boyd</cite>
-            <cite class="c-testimonial__company">Founder & CEO, Huddle</cite>
-          </div>
-        </footer>
-      </figure>
-    </div>
-  </div>
-
-  <div class="o-container">
-    <div class="c-newsletter">
-      <h2 class="c-newsletter__title">Get early access today</h2>
-      <p class="c-newsletter__text">
-        It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
-        questions, our support team would be happy to help you.
-      </p>
-      <div class="c-newsletter__group">
-        <input type="email" name="email" id="email" class="c-newsletter__email" placeholder="email@example.com">
-        <a href="#" class="c-btn c-btn--medium">Get Started For Free</a>
-      </div>
-    </div>
-  </div>
-
-  <footer class="c-footer">
+    <!--Stay-productive-->
     <div class="o-container">
-      <div class="c-footer__content">
-        <div class="c-footer__info">
-          <a href="index.html" >
-            <img src="images/logo.svg" alt="logo" class="brand__footer">
-          </a>
-          <ul class="c-menu c-menu--footer">
-            <li class="c-menu__item">
-              <img src="images/icon-location.svg" alt="icon location">
-              <p class="c-menu--footer__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </p>
-            </li>
-            <li class="c-menu__item">
-              <img src="images/icon-phone.svg" alt="icon phone">
-              <p class="c-menu--footer__text">+1-543-123-4567</p>
-            </li>
-            <li class="c-menu__item">
-              <img src="images/icon-email.svg" alt="icon email">
-              <p class="c-menu--footer__text">example@fylo.com</p>
-            </li>
-          </ul>
+      <div class="stay-productive"><img src="images/illustration-stay-productive.png" alt="stay productive"/>
+        <div class="stay-productive__content">
+          <h2 class="heading--secondary">Stay productive, wherever you are</h2>
+          <p class="stay-productive__text">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+          <p class="stay-productive__text">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+          <div class="cta-link"><a class="cta-link__work" href="#">See how Fylo works</a><img src="images/icon-arrow.svg" alt="arrow"/></div>
         </div>
-        <nav>
-          <ul class="c-menu c-menu--list">
-            <li class="c-menu__item"><a href="#" class="c-menu__link">About Us</a></li>
-            <li class="c-menu__item"><a href="#" class="c-menu__link">Jobs</a></li>
-            <li class="c-menu__item"><a href="#" class="c-menu__link">Press</a></li>
-            <li class="c-menu__item"><a href="#" class="c-menu__link">Blog</a></li>          
-          </ul>
-        </nav>
-        <nav>
-          <ul class="c-menu c-menu--list">
-            <li class="c-menu__item"><a href="#" class="c-menu__link">Contact Us</a></li>
-            <li class="c-menu__item"><a href="#" class="c-menu__link">Terms</a></li>
-            <li class="c-menu__item"><a href="#" class="c-menu__link">Privacy</a></li>
-          </ul>
-        </nav>
-        <nav class="navbar navbar--social">
-          <ul class="c-menu c-menu--social">
-            <li class="c-menu__item"><a href="#" class="c-menu__link"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="c-menu__item"><a href="#" class="c-menu__link"><i class="fab fa-twitter"></i></a></li>
-            <li class="c-menu__item"><a href="#" class="c-menu__link"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </nav>
       </div>
-      
-
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://github.com/Devcrowmaster">Alexander</a>.
-      </p>
-
-
     </div>
-  </footer>
-</body>
+    <!--Testimonials-->
+    <div class="o-container">
+      <div class="c-testimonials">
+        <figure class="c-testimonial">
+          <blockquote class="c-testimonial__text">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</blockquote>
+          <footer class="c-testimonial__info">
+            <div class="c-testimonial__img"><img src="images/profile-1.jpg" alt="profile 1"/></div>
+            <div class="c-testimonial__data">
+              <cite class="c-testimonial__author">Satish Patel</cite>
+              <cite class="c-testimonial__company">Founder & CEO, Huddle</cite>
+            </div>
+          </footer>
+        </figure>
+        <figure class="c-testimonial">
+          <blockquote class="c-testimonial__text">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</blockquote>
+          <footer class="c-testimonial__info">
+            <div class="c-testimonial__img"><img src="images/profile-2.jpg" alt="profile 2"/></div>
+            <div class="c-testimonial__data">
+              <cite class="c-testimonial__author">Bruce McKenzie</cite>
+              <cite class="c-testimonial__company">Founder & CEO, Huddle</cite>
+            </div>
+          </footer>
+        </figure>
+        <figure class="c-testimonial">
+          <blockquote class="c-testimonial__text">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</blockquote>
+          <footer class="c-testimonial__info">
+            <div class="c-testimonial__img"><img src="images/profile-3.jpg" alt="profile 3"/></div>
+            <div class="c-testimonial__data">
+              <cite class="c-testimonial__author">Iva Boyd</cite>
+              <cite class="c-testimonial__company">Founder & CEO, Huddle</cite>
+            </div>
+          </footer>
+        </figure>
+      </div>
+    </div>
+    <!--Newsletter-->
+    <div class="o-container">
+      <div class="c-newsletter">
+        <h2 class="c-newsletter__title">Get early access today</h2>
+        <p class="c-newsletter__text">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+        <div class="c-newsletter__group">
+          <input class="c-newsletter__email" id="email" type="email" name="email" placeholder="email@example.com"/><a class="c-btn c-btn--medium" href="#">Get Started For Free</a>
+        </div>
+      </div>
+    </div>
+    <div class="c-footer">
+      <div class="o-container">
+        <div class="c-footer__content">
+          <div class="c-footer__info"><a href="index.html"><img class="brand__footer" src="images/logo.svg" alt="logo"/></a>
+            <nav>
+              <ul class="c-menu c-menu--footer">
+                <li class="c-menu__item"><img src="images/icon-location.svg" alt="icon location"/>
+                  <p class="c-menu--footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </li>
+                <li class="c-menu__item"><img src="images/icon-phone.svg" alt="icon phone"/>
+                  <p class="c-menu--footer__text">+1-543-123-4567</p>
+                </li>
+                <li class="c-menu__item"><img src="images/icon-email.svg" alt="icon email"/>
+                  <p class="c-menu--footer__text">example@fylo.com</p>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <nav>
+            <ul class="c-menu c-menu--list">
+              <li class="c-menu__item"><a class="c-menu__link" href="#">About Us</a></li>
+              <li class="c-menu__item"><a class="c-menu__link" href="#">Jobs</a></li>
+              <li class="c-menu__item"><a class="c-menu__link" href="#">Press</a></li>
+              <li class="c-menu__item"><a class="c-menu__link" href="#">Blog</a></li>
+            </ul>
+          </nav>
+          <nav>
+            <ul class="c-menu c-menu--list">
+              <li class="c-menu__item"><a class="c-menu__link" href="#">Contact Us</a></li>
+              <li class="c-menu__item"><a class="c-menu__link" href="#">Terms</a></li>
+              <li class="c-menu__item"><a class="c-menu__link" href="#">Privacy</a></li>
+            </ul>
+          </nav>
+          <nav class="navbar navbar--social">
+            <ul class="c-menu c-menu--social">
+              <li class="c-menu__item"><a class="c-menu__link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="c-menu__item"><a class="c-menu__link" href="#"><i class="fab fa-twitter"></i></a></li>
+              <li class="c-menu__item"><a class="c-menu__link" href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+        <p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor.</a>Coded by <a href="https://github.com/Devcrowmaster">Alexander</a></p>
+      </div>
+    </div>
+    <!--Scripts-->
+  </body>
 </html>
